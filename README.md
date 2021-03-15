@@ -9,5 +9,7 @@ This Repository contains some beginner friendly Bootstrap projets, like:
 * carousel
 * cards
 * progressbar
+* Navbars
+* breadcrumb
 * more projects...
 
