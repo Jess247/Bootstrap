@@ -13,11 +13,21 @@
       </head>
     
       <body>
+        <style>
+          /* Change divider trough css */
+          nav {
+            --bs-breadcrumb-divider: "|";
+          } 
+        </style>
+
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item active">Home</li>
-              <li class="breadcrumb-item active">Home</li>
-              <li class="breadcrumb-item active">Home</li>
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page"><a href="#">About</a></li>
+              <li class="breadcrumb-item">Tours</li>
+              <li class="breadcrumb-item">Blog</li>
+              <li class="breadcrumb-item">Contact</li>
+
             </ol>
           </nav>
         
