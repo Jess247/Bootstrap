@@ -1,0 +1,13 @@
+.icon {
+  height: 30px;
+  width: 30px;
+}
+
+#logo {
+  color: #e2afff;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  text-decoration-color: #e2afff;
+}
