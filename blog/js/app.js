@@ -1,6 +1,6 @@
-const alertBtn = document.querySelector('#alert-btn');
-const alertMessage = document.querySelector('#alert-message');
-
-alertBtn.addEventListener('click', function() {
-    alertMessage.classList.remove('hide');
+const likeCount = document.querySelector('#add-like');
+const likeBtn = document.querySelector('#like-btn').addEventListener('click', function(){
+    var counter = 12;
+    counter++;
+    likeCount.textContent = counter;
 });
