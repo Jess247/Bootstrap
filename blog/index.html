@@ -17,9 +17,9 @@
           .carousel-caption {
             top: 40%;
           }
-          .card img {
+          /* .card img {
             height: 10rem;
-          }
+          } */
           
         </style>
 
@@ -116,8 +116,19 @@
           <section class="row mb-5" id="article">
             <article class="col-8" id="main-article">
               <h2 class="display-5">Kinder E-book Schreiben</h2>
-              <p class="lead">Mama sein ist ein Fulltime Job, der oft unterschaetzt wird.</p>
-              <p>Neben Kind, Haushalt und allem andere was dazu gehoert, ist es fuer einige eine Herausforderung einen Vollzeitjob auszuueben. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt error corrupti esse debitis nisi voluptatem voluptates ea est. Provident, eos. Vitae, iure! Doloribus molestiae voluptatum aut, cumque quis repellendus error? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem eveniet, ratione inventore laudantium vero quam maiores non, dolorem deleniti consequatur perferendis quia dolor, ex voluptatum facilis molestias aspernatur. Dolor, nostrum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ea eos corrupti tempore nisi quas culpa sunt tempora. Rerum numquam commodi minus adipisci totam non exercitationem ullam obcaecati? Neque, accusamus.</p>
+              <p>Neben Kind, Haushalt und allem andere was dazu gehoert,
+                 ist es fuer einige eine Herausforderung einen Vollzeitjob 
+                 auszuueben. Lorem ipsum dolor sit amet consectetur, adipisicing 
+                 elit. Incidunt error corrupti esse debitis nisi voluptatem voluptates 
+                 ea est. Provident, eos. Vitae, iure! Doloribus molestiae voluptatum aut, 
+                 cumque quis repellendus error? Lorem ipsum dolor, sit amet consectetur 
+                 adipisicing elit. Autem eveniet, ratione inventore laudantium vero 
+                 quam maiores non, dolorem deleniti consequatur perferendis quia dolor, 
+                 ex voluptatum facilis molestias aspernatur. Dolor, nostrum? Lorem 
+                 ipsum dolor sit amet consectetur adipisicing elit. Voluptate 
+                 ea eos corrupti tempore nisi quas culpa sunt tempora. Rerum 
+                 numquam commodi minus adipisci totam non exercitationem ullam 
+                 obcaecati? Neque, accusamus...</p>
               <button type="button" class="btn btn-secondary">Weiterlesen</button>
               <div class="d-flex justify-content-end">
                 <button type="button" class="btn btn-outline-secondary btn-light" id="like-btn">
@@ -149,34 +160,36 @@
           </section>
 
           <!-- cards -->
-          <section id="cards">
-            <div class="d-flex justify-content-around">
-              <div class="card" style="width: 14rem;">
+          <div class="card-deck">
+            <section class="card mb-5">
                 <img src="https://media.istockphoto.com/vectors/gynecology-and-women-health-consultation-with-a-gynecologist-or-vector-id1195893421?k=6&m=1195893421&s=612x612&w=0&h=RiIs0srCcF3ZWXQPOv_KbQOleKnqTEWenOwGGUhFb0E=" class="card-image-top img-thumbnail img-fluid" alt="">
                 <div class="card-body">
                   <h5>Spample title</h5>
                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad necessitatibus, harum velit.</p>
                   <a href="#" class="btn btn-primary">Weiterlesen</a>
                 </div>
-              </div><!-- card -->
-              <div class="card" style="width: 14rem;">
-                <img src="https://media.istockphoto.com/illustrations/pregnancy-test-illustration-id163927091?k=6&m=163927091&s=612x612&w=0&h=NR9g2SPFvhQA23WpVIjq--xN7E_5oxwtM-_iz8Z-D7s=" class="card-image-top img-thumbnail img-fluid" alt="">
-                <div class="card-body">
-                  <h5>Spample title</h5>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad necessitatibus, harum velit.</p>
-                  <a href="#" class="btn btn-primary">Weiterlesen</a>
-                </div>
-              </div><!-- card -->
-              <div class="card col-3" style="width: 14rem;">
-                <img src="https://media.istockphoto.com/vectors/happy-young-family-set-vector-id1178061227?k=6&m=1178061227&s=612x612&w=0&h=98sXmSisrYHBCSknJmtrKD_lXCzHN0-w3DtbtT9GAJM=" class="card-image-top img-thumbnail img-fluid" alt="">
-                <div class="card-body">
-                  <h5>Spample title</h5>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad necessitatibus, harum velit.</p>
-                  <a href="#" class="btn btn-primary">Weiterlesen</a>
-                </div>
-              </div><!-- card -->
-            </div> <!-- d-flex-->
-          </section>
+            </section><!-- card -->
+
+            <section class="card mb-5">
+              <img src="https://media.istockphoto.com/illustrations/pregnancy-test-illustration-id163927091?k=6&m=163927091&s=612x612&w=0&h=NR9g2SPFvhQA23WpVIjq--xN7E_5oxwtM-_iz8Z-D7s=" class="card-image-top img-thumbnail img-fluid" alt="">
+                    <div class="card-body">
+                      <h5>Spample title</h5>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad necessitatibus, harum velit.</p>
+                      <a href="#" class="btn btn-primary">Weiterlesen</a>
+                    </div>
+            </section><!-- card -->
+
+            <section class="card">
+              <img src="https://media.istockphoto.com/vectors/happy-young-family-set-vector-id1178061227?k=6&m=1178061227&s=612x612&w=0&h=98sXmSisrYHBCSknJmtrKD_lXCzHN0-w3DtbtT9GAJM=" class="card-image-top img-thumbnail img-fluid" alt="">
+                    <div class="card-body">
+                      <h5>Spample title</h5>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad necessitatibus, harum velit.</p>
+                      <a href="#" class="btn btn-primary">Weiterlesen</a>
+                    </div>
+            </section><!-- card -->
+          </div><!-- card group -->
+
+          
         </div><!-- container -->
         </main>
         
