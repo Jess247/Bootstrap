@@ -10,14 +10,14 @@
         <title>Scroll Spy</title>
     
       </head>
-      <body>
+      <body data-bs-spy="scroll" ata-bs-target="#navbar-spy" data-bs-offset="80" tabindex="0">
         <style>
           header {
             margin-top: 5rem;
           }
         </style>
         <header>
-          <nav id="navbar-spy" class="navbar navbar-dark bg-dark fixed-top">
+          <nav id="navbar-spy" class="navbar navbar-dark bg-dark fixed-top px-3">
             <a class="navbar-brand" href="#"><small>Out</small>Doors</a>
             <ul class="nav nav-pills">
               <li class="nav-item">
@@ -39,97 +39,120 @@
           </nav><!-- navbar -->
         </header>
         <div class="container">
-          <section id="overview">
-            <h1>Camping around the World</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique id quidem, optio omnis aliquid iure repellendus porro quisquam natus dolorem provident eos consectetur tempora doloribus illo impedit ratione aperiam? Fugiat?<br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores tempora, ab ex ducimus labore soluta impedit velit sapiente quo similique inventore facilis repellendus vero blanditiis voluptatum vitae repudiandae. Tempore, nemo.</p>
-          </section><!-- section -->
-          <section id="countries">
-            <h1>Camping friendly countries</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique id quidem, optio omnis aliquid iure repellendus porro quisquam natus dolorem provident eos consectetur tempora doloribus illo impedit ratione aperiam Fugiat.</p>
-            <ol>
-              <li>New Zealand</li>
-              <li>Canada</li>
-              <li>Norway</li>
-              <li>Australia</li>
-              <li>United States</li>
-              <li>Iceland</li>
-              <li>United Kingdom</li>
-              <li>Norway</li>
-              <li>France</li>
-              <li>Chile</li>
-            </ol>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum nemo commodi natus quasi culpa. Esse, minima, cum, incidunt dolores a quod soluta magni mollitia voluptate doloremque nulla debitis explicabo voluptatum.</p>
-             <!-- trigger modal -->
-            <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#checklist">Show Checklist</button>
-            <!-- modal -->
-            <div class="modal fade" id="checklist" tabindex="-1" aria-labelledby="checklist" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="checklist-title">Checklist</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <img class="img-fluid rounded" src="https://www.rei.com/dam/camping-checklist-lg1.jpg" alt="">
-                    <p>Things you should definitly pack!</p>
-                    <ul>
-                      <li>Sleeping bag</li>
-                      <li>Pillow</li>
-                      <li>Sleeping mat</li>
-                      <li>Torch</li>
-                      <li>Spare batteries or charger</li>
-                      <li>Tent repare kit</li>
-                      <li>Pot</li>
-                      <li>Kitchen kit</li>
-                      <li>First Aid kit</li>
-                    </ul>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+            <section id="overview" style="margin-top: 100px;">
+              <h1>Camping around the World</h1>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique id quidem, optio omnis aliquid iure repellendus porro quisquam natus dolorem provident eos consectetur tempora doloribus illo impedit ratione aperiam? Fugiat?<br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores tempora, ab ex ducimus labore soluta impedit velit sapiente quo similique inventore facilis repellendus vero blanditiis voluptatum vitae repudiandae. Tempore, nemo.</p>
+            </section><!-- section -->
+            <section id="countries">
+              <h1>Camping friendly countries</h1>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique id quidem, optio omnis aliquid iure repellendus porro quisquam natus dolorem provident eos consectetur tempora doloribus illo impedit ratione aperiam Fugiat.</p>
+              <ol class="list-group w-50 w-sm-50">
+                <li class="list-group-item">New Zealand</li>
+                <li class="list-group-item">Canada</li>
+                <li class="list-group-item">Norway</li>
+                <li class="list-group-item">Australia</li>
+                <li class="list-group-item">United States</li>
+                <li class="list-group-item">Iceland</li>
+                <li class="list-group-item">United Kingdom</li>
+                <li class="list-group-item">Norway</li>
+                <li class="list-group-item">France</li>
+                <li class="list-group-item">Chile</li>
+              </ol>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum nemo commodi natus quasi culpa. Esse, minima, cum, incidunt dolores a quod soluta magni mollitia voluptate doloremque nulla debitis explicabo voluptatum.</p>
+               <!-- trigger modal -->
+              <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#checklist">Show Checklist</button>
+              <!-- modal -->
+              <div class="modal fade" id="checklist" tabindex="-1" aria-labelledby="checklist" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="checklist-title">Checklist</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img class="img-fluid rounded" src="https://www.rei.com/dam/camping-checklist-lg1.jpg" alt="">
+                      <p>Things you should definitly pack!</p>
+                      <ul class="list-group w-50 w-sm-50">
+                        <li class="list-group-item">Sleeping bag</li>
+                        <li class="list-group-item">Pillow</li>
+                        <li class="list-group-item">Sleeping mat</li>
+                        <li class="list-group-item">Torch</li>
+                        <li class="list-group-item">Spare batteries or charger</li>
+                        <li class="list-group-item">Tent repare kit</li>
+                        <li class="list-group-item">Pot</li>
+                        <li class="list-group-item">Kitchen kit</li>
+                        <li class="list-group-item">First Aid kit</li>
+                      </ul>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </section><!-- section -->
-          <section id="wildlife">
-            <h1>Wildlife</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique id quidem, optio omnis aliquid iure repellendus porro quisquam natus dolorem provident eos consectetur tempora doloribus illo impedit ratione aperiam? Fugiat.<br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores tempora, ab ex ducimus labore soluta impedit velit sapiente quo similique inventore facilis repellendus vero blanditiis voluptatum vitae repudiandae. Tempore, nemo. 
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est totam incidunt repellendus? Nostrum iusto, nihil commodi dicta accusamus omnis soluta itaque quam, libero labore non, alias dolores rerum recusandae minima.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure atque sapiente animi, nobis distinctio, ipsa error quo voluptates illum rerum impedit reprehenderit quae eum? Quos natus alias est dolorum odio?</p>
-          </section>
-          <section id="gear">
-            <h1>Gear</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique id quidem, optio omnis aliquid iure repellendus porro quisquam natus dolorem provident eos consectetur tempora doloribus illo impedit ratione aperiam? Fugiat?<br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores tempora, ab ex ducimus labore soluta impedit velit sapiente quo similique inventore facilis repellendus vero blanditiis voluptatum vitae repudiandae. Tempore, nemo.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident atque mollitia laborum molestiae quasi, harum quidem aspernatur a, exercitationem assumenda vitae, commodi ipsa doloribus perspiciatis eveniet tempora! Assumenda, dignissimos at!</p>
-            <ul>
-              <li>Tent</li>
-              <li>Tent</li>
-              <li>Tent</li>
-              <li>Tent</li>
-              <li>Tent</li>
-            </ul>
-          </section><!-- section -->
-          <section id="get-around">
-            <h1>How to get aroud?</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique id quidem, optio omnis aliquid iure repellendus porro quisquam natus dolorem provident eos consectetur tempora doloribus illo impedit ratione aperiam? Fugiat.<br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores tempora, ab ex ducimus labore soluta impedit velit sapiente quo similique inventore facilis repellendus vero blanditiis voluptatum vitae repudiandae. Tempore, nemo.</p>
-            <h2>Bus and train</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ipsum, ab ipsa omnis architecto fuga provident cum aliquid earum voluptates perferendis minus quod fugiat praesentium sint atque aliquam eum deserunt.</p>
-            <h2>Rent/Buy a Car</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique possimus vero magnam officiis praesentium veniam voluptatum minus explicabo debitis architecto officia, odio deleniti nostrum iusto sapiente amet, accusantium perspiciatis voluptas.</p>
-            <h2>Hitch hike</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, autem ipsam? Maiores iste expedita quisquam consequuntur, illo iure ratione. Tempora totam exercitationem repellendus? Dolorem corrupti error ut, cum velit earum.</p>
-            <h2>Plane</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam culpa perferendis aut in commodi possimus delectus nobis cupiditate porro perspiciatis quod debitis sunt minus optio, non illum vitae corrupti voluptatum.</p>
-          </section><!-- section -->
+            </section><!-- section -->
+            <section id="wildlife">
+              <h1>Wildlife</h1>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique id quidem, optio omnis aliquid iure repellendus porro quisquam natus dolorem provident eos consectetur tempora doloribus illo impedit ratione aperiam? Fugiat.<br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores tempora, ab ex ducimus labore soluta impedit velit sapiente quo similique inventore facilis repellendus vero blanditiis voluptatum vitae repudiandae. Tempore, nemo. 
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est totam incidunt repellendus? Nostrum iusto, nihil commodi dicta accusamus omnis soluta itaque quam, libero labore non, alias dolores rerum recusandae minima.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure atque sapiente animi, nobis distinctio, ipsa error quo voluptates illum rerum impedit reprehenderit quae eum? Quos natus alias est dolorum odio?</p>
+            </section>
+            <section>
+              <h1 id="gear">Gear</h1>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique id quidem, optio omnis aliquid iure repellendus porro quisquam natus dolorem provident eos consectetur tempora doloribus illo impedit ratione aperiam? Fugiat?<br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores tempora, ab ex ducimus labore soluta impedit velit sapiente quo similique inventore facilis repellendus vero blanditiis voluptatum vitae repudiandae. Tempore, nemo.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident atque mollitia laborum molestiae quasi, harum quidem aspernatur a, exercitationem assumenda vitae, commodi ipsa doloribus perspiciatis eveniet tempora! Assumenda, dignissimos at!</p>
+              <ul class="list-group w-50 w-sm-50">
+                <li class="list-group-item">Campsite</li>
+                <li class="list-group-item">Tools</li>
+                <li class="list-group-item">Cloth</li>
+                <li class="list-group-item">Kitchen</li>
+                <li class="list-group-item">Necessities</li>
+              </ul>
+            </section><!-- section -->
+            <section id="get-around" class="mt-5">
+              <h1>How to get aroud?</h1>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique id quidem, optio omnis aliquid iure repellendus porro quisquam natus dolorem provident eos consectetur tempora doloribus illo impedit ratione aperiam? Fugiat.<br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores tempora, ab ex ducimus labore soluta impedit velit sapiente quo similique inventore facilis repellendus vero blanditiis voluptatum vitae repudiandae. Tempore, nemo.</p>
+              <h2>Bus and train</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ipsum, ab ipsa omnis architecto fuga provident cum aliquid earum voluptates perferendis minus quod fugiat praesentium sint atque aliquam eum deserunt.</p>
+              <h2>Rent/Buy a Car</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique possimus vero magnam officiis praesentium veniam voluptatum minus explicabo debitis architecto officia, odio deleniti nostrum iusto sapiente amet, accusantium perspiciatis voluptas.</p>
+              <h2>Hitch hike</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, autem ipsam? Maiores iste expedita quisquam consequuntur, illo iure ratione. Tempora totam exercitationem repellendus? Dolorem corrupti error ut, cum velit earum.</p>
+              <h2>Plane</h2>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam culpa perferendis aut in commodi possimus delectus nobis cupiditate porro perspiciatis quod debitis sunt minus optio, non illum vitae corrupti voluptatum.</p>
+            </section><!-- section -->
 
-        </div>
+        </div><!-- container -->
         <script src="js/jquery.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        <script>
+
+          // ############### offset while scrolling ##################
+        // $(function() {
+        //   var topoffset = 70; //variable for menu height
+          
+        //   //Use smooth scrolling when clicking on navigation
+        //   $('.navbar-nav a').click(function() {
+        //     if (location.pathname.replace(/^\//,'') ===
+        //         this.pathname.replace(/^\//,'') &&
+        //         location.hostname === this.hostname) {
+        //         var target = $(this.hash);
+        //         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        //         if (target.length) {
+        //           $('html,body').animate({
+        //             scrollTop: target.offset().top-topoffset
+        //           }, 500);
+        //           return false;
+        //         } //target.length
+        //       } //click function
+        //     }); //smooth scrolling
+        //   });
+          </script>
       </body>
     </html>
