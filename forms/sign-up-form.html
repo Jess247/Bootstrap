@@ -19,35 +19,56 @@
           }
       </style>
     <div class="container d-flex justify-content-center mt-4 bg-light  rounded pt-4">
-        <form>
+        <form class="needs-validation" novalidate>
             <fieldset class="form-group row" id="form-container">
-                <div class="form-group">
+                <div class="form-group has-validation">
                     <label class="form-label" for="firstname">Firstname</label>
-                    <input id="firstname" class="form-control" type="text" placeholder="Firstname">
+                    <input id="firstname" class="form-control" type="text" placeholder="Firstname" required>
+                    <div class="invalid-feedback">
+                        Please enter your Name!
+                    </div>
                 </div><!-- form-group -->
-                <div class="form-group">
+                <div class="form-group has-validation">
                     <label class="form-label" for="surname">Surname</label>
-                    <input id="surname" class="form-control" type="text" placeholder="Surname">
+                    <input id="surname" class="form-control" type="text" placeholder="Surname" required>
+                    <div class="invalid-feedback">
+                        Please enter your Surname!
+                    </div>
                 </div><!-- form-group -->
-                <div class="form-group">
+                <div class="form-group has-validation">
                     <label class="form-label" for="phone">Phone number</label>
-                    <input id="phone" class="form-control" type="text" placeholder="Phone Number">
+                    <input id="phone" class="form-control" type="text" placeholder="Phone Number" required>
+                    <div class="invalid-feedback">
+                        Please enter your Mobilenumber!
+                    </div>
                 </div><!-- form-group -->
-                <div class="form-group">
+                <div class="form-group has-validation">
                     <label class="form-label" for="emailadress">Emailadress</label>
-                    <input id="emailadress" class="form-control" type="email" placeholder="Emailadress">
+                    <input id="emailadress" class="form-control" type="text" placeholder="Emailadress" required>
+                    <div class="invalid-feedback">
+                        Please enter your Emailadress!
+                    </div>
                 </div><!-- form-group -->
-                <div class="form-group">
+                <div class="form-group has-validation">
                     <label class="form-label" for="adress">Adress</label>
-                    <input id="adress" class="form-control" type="email" placeholder="Adress">
+                    <input id="adress" class="form-control" type="text" placeholder="Adress" required>
+                    <div class="invalid-feedback">
+                        Please enter your Adress!
+                    </div>
                 </div><!-- form-group -->
-                <div class="form-group col-6">
+                <div class="form-group col-6 has-validation">
                     <label class="form-label sr-only" for="city">City</label>
-                    <input id="city" class="form-control" type="text" placeholder="City">
+                    <input id="city" class="form-control" type="text" placeholder="City" required>
+                    <div class="invalid-feedback">
+                        Please enter your City!
+                    </div>
                 </div><!-- form-group -->
-                <div class="form-group col-6">
+                <div class="form-group col-6 has-validation">
                     <label class="form-label sr-only" for="zip">Zip-Code</label>
-                    <input id="zip" class="form-control" type="text" placeholder="Zip-Code">
+                    <input id="zip" class="form-control" type="text" placeholder="Zip-Code" required>
+                    <div class="invalid-feedback">
+                        Please enter your Zip Code!
+                    </div>
                 </div><!-- form-group -->
                 <div>
                     <label class="form-label lead">What programming languages are you interessted in?</label>
