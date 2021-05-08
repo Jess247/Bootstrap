@@ -1,0 +1,17 @@
+#btns-right i,
+#btns-left i {
+  font-size: 1.3rem;
+}
+
+.navbar-brand {
+  font-size: 3rem;
+  vertical-align: middle;
+}
+.navbar-brand i {
+  color: rgb(36, 103, 247);
+}
+
+.btn {
+  height: 3rem;
+  width: 3rem;
+}

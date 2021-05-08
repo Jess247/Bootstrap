@@ -15,17 +15,21 @@
     
       <body>
         <header>
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"><i class="fab fa-facebook"></i></a>
-              <button type="button"><i class="fas fa-search"></i></button>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <button type="btn"><i class="fas fa-plus"></i></button>
-              <a href="#"><i class="fab fa-facebook-messenger"></i></a>
-              <button type="button"><i class="far fa-bell"></i></button>
-              <button type="button"><i class="fas fa-caret-down"></i></button>
+              <div class="btns-left">
+                <a class="navbar-brand" href="#"><i class="fab fa-facebook"></i></a>
+                <button type="button" class="btn btn-secondary rounded-circle"><i class="fas fa-search"></i></button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+              <div id="btns-right">
+                <button type="button" class="btn btn-secondary rounded-circle"><i class="fas fa-plus"></i></button>
+                <button type="button" class="btn btn-secondary rounded-circle"><i class="fab fa-facebook-messenger"></i></button>
+                <button type="button" class="btn btn-secondary rounded-circle"><i class="far fa-bell"></i></button>
+                <button type="button" class="btn btn-secondary rounded-circle"><i class="fas fa-caret-down"></i></button>
+              </div>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <form class="d-flex">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -53,7 +57,7 @@
           </nav>
           <div id="profil-pic" class="container">
             <img src="" alt="profil picture">
-            <button type="button" class="btn btn-secondary"><i class="fas fa-camera"></i></button>
+            <button type="button" class="btn btn-secondary rounded-circle"><i class="fas fa-camera"></i></button>
           </div>
         </header>
         
