@@ -1,0 +1,76 @@
+body {
+  background: rgb(31, 30, 30);
+}
+
+/* header nav */
+#btns-right i,
+#btns-left i {
+  font-size: 1.3rem;
+}
+
+.navbar-brand {
+  font-size: 3rem;
+  vertical-align: middle;
+}
+.navbar-brand i {
+  color: rgb(36, 103, 247);
+}
+
+nav .btn {
+  height: 3rem;
+  width: 3rem;
+}
+
+/* Header Profile */
+#profil-header {
+  background: url("https://scontent-ham3-1.xx.fbcdn.net/v/t1.18169-9/13432311_1115881371817251_7560739385678468688_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=e3f864&_nc_ohc=QDHMpuvOrkQAX-ryc20&_nc_ht=scontent-ham3-1.xx&oh=e8678eadb34e10f7f481748207342634&oe=60BBB260");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+}
+
+#profil-img {
+  text-align: center;
+}
+
+#profil-img img {
+  position: relative;
+  left: 5%;
+  height: 12rem;
+}
+
+#edit-btn {
+  position: relative;
+  top: 40px;
+  left: -15px;
+}
+
+#profil-bio {
+  width: 80vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#profil-btns {
+  width: 80vw;
+  margin: 0.8rem auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+#profil-btns button {
+  padding: 0.5rem;
+  font-size: 0.8rem;
+}
+
+#jumbotron-btns {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
