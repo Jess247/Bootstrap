@@ -56,10 +56,41 @@
             </div>
           </nav>
           <div id="profil-header" class="text-center" >
-            <img class="rounded-circle border border-4 border-dark" src="https://scontent-ham3-1.xx.fbcdn.net/v/t1.18169-9/14054203_1172929849445736_2510935398333122939_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=RgwKijz2tYoAX8cSPBB&_nc_oc=AQkvC8bR6KEEgF-Sua0S-djjxJEaLvRIy15JWgO8CzEOaeolWGdMSaNedP2IX_Ldyak&_nc_ht=scontent-ham3-1.xx&oh=da6a509727900c1be96d9813de67e890&oe=60BB331F"  alt="profil picture">
-            <button id="edit-btn" type="button" class="btn btn-secondary rounded-circle"><i class="fas fa-camera"></i></button>
+            <div id="profil-img">
+              <img class="rounded-circle border border-4 border-dark" src="https://scontent-ham3-1.xx.fbcdn.net/v/t1.18169-9/14054203_1172929849445736_2510935398333122939_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=RgwKijz2tYoAX8cSPBB&_nc_oc=AQkvC8bR6KEEgF-Sua0S-djjxJEaLvRIy15JWgO8CzEOaeolWGdMSaNedP2IX_Ldyak&_nc_ht=scontent-ham3-1.xx&oh=da6a509727900c1be96d9813de67e890&oe=60BB331F"  alt="profil picture">
+              <button id="edit-btn" type="button" class="btn btn-secondary rounded-circle"><i class="fas fa-camera"></i></button>
+            </div>
+          </div>
+          <div id="profil-bio" class="border-bottom text-light">
+            <h1>Jessica Singletary</h1>
+            <p>Software Developer | Web Designer | Passionate Surfer</p>
+          </div>
+          <div id="profil-btns">
+            <button type="button" class="btn btn-primary mr-2"><i class="fas fa-plus-circle pr-1"></i>In Story Posten</button>
+            <button type="button" class="btn btn-secondary mr-2"><i class="fas fa-pen"></i>Profil bearbeiten</button>
+            <div class="dropdown">
+              <button id="profil-dropdown" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">...</button>
+              <ul class="dropdown-menu" aria-labelledby="profil-dropdown">
+                <li><a class="dropdown-item" href="#"><i class="far fa-eye pr-1"></i>Anzeigen aus Sicht von</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fas fa-search pr-1"></i>Profil durchsuchen</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fas fa-exclamation-triangle pr-1"></i>Kontostatus</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fas fa-archive pr-1"></i>Archiv</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fas fa-tasks pr-1"></i>Aktivitaetenprotokoll</a></li>
+                <li><a class="dropdown-item" href="#"><i class="far fa-user-circle pr-1"></i>Profil und Markierungseinstellungen</a></li>
+              </ul>
+            </div>
           </div>
         </header>
+        <main class="container">
+          <div class="jumbotron bg-dark">
+            <h3 class="text-light">Steckbrief</h3>
+            <div id="jumbotron-btns">
+              <button type="button" class="btn btn-secondary mb-2">Details bearbeiten</button>
+              <button type="button" class="btn btn-secondary mb-2">Hobbys hinzufuegen</button>
+              <button type="button" class="btn btn-secondary mr-2">Featured Content hinzufuegen</button>
+            </div>
+          </div>
+        </main>
         
         <script src="js/jquery.min.js"></script>
         <script src="js/popper.min.js"></script>
