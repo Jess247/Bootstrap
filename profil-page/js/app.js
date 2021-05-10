@@ -1,12 +1,30 @@
-const likeCount = document.querySelector('#add-like');
-const likeBtn = document.querySelector('#like-btn').addEventListener('click', function(){
-    var counter = 12;
-    counter++;
-    likeCount.textContent = counter;
+const changeImgBtn = document.querySelector("#profil-edit-btn");
+const closeBtn = document.querySelector("#close-btn")
+const overlayForm = document.querySelector("#overlay");
+
+changeImgBtn.addEventListener("click", displayForm);
+
+
+function displayForm() {
+    overlayForm.style.display = "block";
+}
+
+// upload
+const uploadeForm = document.querySelector("#uploadeForm");
+const inpFile = document.querySelector("inpFile");
+
+uploadeForm.addEventListener("submit", e => {
+    // prevent page form reloading
+    e.preventDefault();
+
+    const endpoint = "upload.php";
+    const formData = new FormData();
+
+    formData.append("inpFile", inpFile.files[0]);
+
+    fetch(endpoint, {
+        method: "post",
+        body: formData
+    }.catch(console.error));
 });
 
-const year = document.querySelector('#year');
-var date = new Date();
-var currentYear = date.getFullYear();
-
-year.textContent = currentYear;
