@@ -10,21 +10,22 @@ function displayForm() {
 }
 
 // upload
-const uploadeForm = document.querySelector("#uploadeForm");
-const inpFile = document.querySelector("inpFile");
+const uploadForm = document.querySelector("#uploadForm");
+const inpFile = document.querySelector("#inpFile");
 
-uploadeForm.addEventListener("submit", e => {
+uploadForm.addEventListener("submit", e => {
     // prevent page form reloading
     e.preventDefault();
 
-    const endpoint = "upload.php";
+    const endpoint = "profil-page/upload.php";
     const formData = new FormData();
+  
 
     formData.append("inpFile", inpFile.files[0]);
 
     fetch(endpoint, {
         method: "post",
         body: formData
-    }.catch(console.error));
+    }).catch(console.error);
 });
 
