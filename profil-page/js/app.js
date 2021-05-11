@@ -11,7 +11,7 @@ function displayForm() {
 
 // upload
 const uploadeForm = document.querySelector("#uploadeForm");
-const inpFile = document.querySelector("inpFile");
+const inpFile = document.querySelector("#inpFile");
 
 uploadeForm.addEventListener("submit", e => {
     // prevent page form reloading
@@ -19,6 +19,8 @@ uploadeForm.addEventListener("submit", e => {
 
     const endpoint = "upload.php";
     const formData = new FormData();
+  
+
 
     formData.append("inpFile", inpFile.files[0]);
 
